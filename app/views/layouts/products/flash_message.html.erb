@@ -1,0 +1,10 @@
+<% flash.each do |key, value| %>
+	<% key = "warning" if key == "notice" %>
+	<% key = "danger" if key == "errors" %>
+	<% key = "success" if key == "alert" %>
+  <div class="alert alert-<%= key %> d-flex align-items-center card-margin alert-dismissible fade show" role="alert">
+    <button type="button" class="btn btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    <!-- <i class="material-icons mr-3">error_outline</i> -->
+    <div class="text-body"> <%= value %> </div>
+  </div>
+<% end %>
