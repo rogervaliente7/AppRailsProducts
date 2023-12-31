@@ -1,4 +1,10 @@
 <%= form_with model: @product do |form| %>
+   <% @product.errors.full_messages.each do |error| %>
+      <div>
+        <%= error %>
+      </div>
+   <% end %>
+   <br>   
    <div>
     <%= form.label :title %>
     <%= form.text_field :title %>
