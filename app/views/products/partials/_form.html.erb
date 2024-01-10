@@ -24,7 +24,13 @@
     <%= form.label :price %>
     <%= form.text_field :price %>
    <div>
-    
+   
+   <div>
+     <%= form.label :category %>
+     <%= form.collection_select :category_id, Category.all.order(name: :asc), :id, :name %>
+   <div>  
+
+
    <br>
 
    <div>

@@ -26,6 +26,12 @@ gem 'simple_form', '~> 5.1'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
+# Hotwire's SPA-like page accelerator [https://turbo.hotwired.dev]
+gem "turbo-rails"
+
+# Hotwire's modest JavaScript framework [https://stimulus.hotwired.dev]
+gem "stimulus-rails"
+
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
 

@@ -21,6 +21,7 @@ es:
               blank: 'no puede estar vacío'
   #common            
   common:
+    all: Todos
     confirm: '¿Estás seguro?'
     back: 'Regresar'
   shared:

@@ -53,6 +53,7 @@ en:
   common:
     confirm: 'Are you sure?'
     back: 'Go back'
+    all: All
   shared:
     header:
       add: 'Add product'
