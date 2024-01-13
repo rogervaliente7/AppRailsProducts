@@ -9,3 +9,4 @@ import "popper"
 import "bootstrap"
 import "sb-admin-2.min"
 //= require sb-admin-2.min
+//= require font_awesome5
