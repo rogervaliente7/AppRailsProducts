@@ -37,9 +37,10 @@ gem 'bootsnap', '>= 1.4.4', require: false
 
 #Adding boostrap
 gem 'bootstrap', '~> 5.3.2'
-
+#Bootstrap requires jquery
 gem 'jquery-rails'
-
+#For icons
+gem 'font_awesome5_rails'
 
 
 group :development, :test do
