@@ -54,6 +54,8 @@ en:
     confirm: 'Are you sure?'
     back: 'Go back'
     all: All
+    actions:
+      save: Save
   shared:
     header:
       add: 'Add product'

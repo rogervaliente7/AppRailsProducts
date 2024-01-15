@@ -19,11 +19,15 @@ es:
               blank: 'no puede estar vacía'
             price:
               blank: 'no puede estar vacío'
+  model_names:
+    product: Products            
   #common            
   common:
     all: Todos
     confirm: '¿Estás seguro?'
     back: 'Regresar'
+    actions:
+      save: Guardar
   shared:
     header:
       add: 'Añadir producto'

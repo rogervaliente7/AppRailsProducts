@@ -1,5 +1,23 @@
 <h1> <%= t('.title')%> </h1>
 
-<%= render partial: 'category', collection: @categories%>
+    <div class="row">
+        <div class="col-sm-6 mr-md-3">
+        <%= link_to t('.new'), new_category_path, class: 'btn btn-success btn-sm float-right' %>
+        <br><br>
+            <table class="table table-dark">
+                <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Category</th>
+                    <th scope="col">Actions</th>
+                </tr>
+                </thead>
+                <tbody>
+                  <% @categories.each_with_index do |category, index| %>  
+                    <%= render partial: 'category', locals: {category: category, index: index}%>
+                  <% end %>
+                </tbody>
+            </table>
+        </div>
+    </div>
 
-<%= link_to t('.new'), new_category_path %>
