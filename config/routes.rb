@@ -4,4 +4,9 @@ Rails.application.routes.draw do
   #product resida en el home, en la raiz
   resources :products, path: '/'
   # get '/', to: redirect('/products')
+
+  #users_new 
+  namespace :authentication, path: '', as: '' do
+    resources :users, only: [:new, :create]
+  end  
 end
