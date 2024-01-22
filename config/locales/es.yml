@@ -34,7 +34,11 @@ es:
   authentication:
     users:
       create:
-        created: 'Tu cuenta ha sido creada!'    
+        created: 'Tu cuenta ha sido creada!'
+    sessions:
+      create:
+        created: 'Bienvenid@!'
+        failed: 'Login invalido!'        
   products:
     edit:
       title: 'Editar producto'

@@ -62,7 +62,11 @@ en:
   authentication:
     users:
       create:
-        created: 'Your account has been created!'    
+        created: 'Your account has been created!'
+    sessions:
+      create:
+        created: 'Welcome!'
+        failed: 'Invalid Login!'        
   products:
     edit:
       title: 'Edit product'
