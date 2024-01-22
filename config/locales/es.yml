@@ -26,6 +26,7 @@ es:
     all: Todos
     confirm: '¿Estás seguro?'
     back: 'Regresar'
+    not_logged_in: 'Tienes que hacer login o crearte una cuenta'
     actions:
       save: Guardar
   shared:
