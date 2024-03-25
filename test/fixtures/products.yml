@@ -5,15 +5,19 @@ ps4:
   description: PS4 en buen estado
   price: 150
   category: videogames
+  user: roger
 
 switch:
   title: Nintendo Switch
   description: Le falla el lector de huella
   price: 170
   category: videogames
+  user: leo
+
 
 air:
   title: Macbook Air
   description: Le falla la bateria
   price: 350
-  category: computers   
+  category: computers
+  user: roger

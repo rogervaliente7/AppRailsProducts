@@ -1,16 +1,23 @@
-<%= form_with(url: sessions_path) do |form| %>
-  
-    <div>
-      <%= form.label :login %>
-      <%= form.text_field :login %>
+<div class="container">
+  <br><br>
+  <%= simple_form_for(:session, url: sessions_path) do |form| %>
+    <div class="row">
+      <div class="col-sm-6">
+        <%= form.input :login, label: "Login", required: true %>
+      </div>
     </div>
-
-    <div>
-      <%= form.label :password %>
-      <%= form.password_field :password %>
+    <div class="row">  
+      <div class="col-sm-6">
+        <%= form.input :password, label: "Password", as: :password, required: true %>
+      </div>
     </div>
-  
-    <div>
-      <%= form.submit %>
+    <div class="row justify-content-between">        
+      <div class="col-sm-4">  
+        <%= form.button :submit, 'Sign In', class: 'btn btn-success btn-sm' %>
+        <% unless Current.user %>
+          <%= link_to "Registrarse", new_user_path, class: 'btn btn-primary btn-sm' %>
+        <% end %> 
+      </div>       
     </div>
   <% end %>
+</div>
